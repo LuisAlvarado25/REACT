@@ -1,0 +1,94 @@
+
+.School {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    min-height:calc(100vh - 60px);
+    width:calc(100% - 30px);
+    margin:0 15px 0 15px;
+    background: rgb(248, 248, 248);
+    color: white;
+    border-radius: 10px;
+   
+  }
+  .School-card {
+    position: relative;
+    margin:10px;
+    width: 350px;
+    height: calc(100vh - 80px);
+  }
+  
+  .School-card h1,h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .card-back,
+  .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+  }
+  .card-front {
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(0deg);
+  }
+  
+  .Sucursal1{
+    background: url(/JC.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+    border-radius: 10px;
+  }
+  .Sucursal2{
+    background-color: rgba(207, 34, 34, 0.1);
+    background: url(/AF.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.Sucursal1::after,
+.Sucursal2::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .5 ;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+  .card-back {
+    background-color: rgb(70, 70, 70);
+    transform: perspective(500px) rotateY(180deg);
+  }
+
+  .Ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .School-card:hover .card-front {
+    cursor: pointer;
+    transform: perspective(500px) rotateY(180deg);
+  }
+  .School-card:hover .card-back {
+    cursor: pointer;
+    transform: perspective(500px) rotateY(360deg);
+  }
+  

@@ -1,0 +1,16 @@
+
+.About {
+    padding: 20px;
+    width: 100vw;
+    min-height: calc(100vh - 40px);
+    background-color: white;
+  }
+  .About h1{
+    text-align: center;
+  }
+  .About p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }

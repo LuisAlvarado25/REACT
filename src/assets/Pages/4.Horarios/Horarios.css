@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Horarios{
+   
+    padding: 0 40PX 0 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: calc(100vh - 60px);
+    width: 100vw;
+}
+.Horarios h2{
+    color: black;
+}
+.Horariosbox{
+    background-color: rgb(216, 3, 3);
+    height: 400px;
+}
+.Horariosbox h3{
+    text-align: center;
+}
+.slick-slide div{
+    margin: 0 0rem;
+}
+.slick-dots li.slick-active button::before{
+    color: rgb(0, 0, 0) !important;
+}
+.slick-dots li button::before{
+    color: rgb(0, 0, 0) !important;
+    font-size: 1rem !important;
+}
+.slick-prev:before, .slick-next:before {
+    
+    color: #000000 !important;
+    
+}

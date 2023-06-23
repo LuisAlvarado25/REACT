@@ -1,0 +1,24 @@
+.Home {
+    display: flex;
+    max-width: 100%;
+    height: calc(100vh - 60px);
+    color: white;
+   }
+
+  .Home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .Home-img {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.5);
+   
+ }
+  
