@@ -20,7 +20,7 @@ function App() {
        <Navbar></Navbar>
        <SocialMedia></SocialMedia>
        <Routes>
-       <Route path="/" element={<Home/>}/>
+       <Route  exactly path="/" element={<Home/>}/>
        <Route path="/About" element= {<About/>}/>
        <Route path="/School" element= {<School/>}/>
        <Route path="/Horarios"  element={<Horarios/>}/>
