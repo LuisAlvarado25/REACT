@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import styled from 'styled-components';
 import Burgerbutton from './Burgerbutton';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -13,10 +14,10 @@ function Navbar() {
     <NavContainer>
       <a href="/REACT/Pages/Home">MAMBO HOUSE</a>
       <div className={`links ${clicked ? 'active' : ''}`}>
-        <a href="/REACT/Pages/Home">Inicio</a>
-        <a href="/REACT/Pages/About">Nosotros</a>
-        <a href="/REACT/Pages/School">Escuela</a>
-        <a href="/REACT/Pages/Horarios">Horarios</a>
+        <a><Link to="/">Inicio</Link></a>
+        <a><Link to="/About">Nosotros</Link></a>
+        <a><Link to="/School">Escuela</Link></a>
+        <a><Link to="/Horarios">Horarios</Link></a>
       </div>
      <div className='Burger'>
      <Burgerbutton clicked={clicked} handleClick={handleClick}></Burgerbutton>
