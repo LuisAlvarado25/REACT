@@ -1,13 +1,14 @@
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
 .Home {
     display: flex;
     max-width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100dvh - 60px);
     color: white;
+    background-color: rgb(255, 255, 255);
    }
 
   .Home-container {

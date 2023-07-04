@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
     <NavContainer>
-      <NavLink className='link' to="/" onClick={() => setClicked(false)}>MAMBO HOUSE</NavLink>
+      <NavLink className='container_link' to="/" onClick={() => setClicked(false)}>MAMBO HOUSE</NavLink>
       <div className={`links ${clicked ? 'active' : ''}`}>
         <NavLink className='link' to="/"         onClick={() => setClicked(false)}>Inicio</NavLink>
         <NavLink className='link' to="/About"    onClick={() => setClicked(false)}>Nosotros</NavLink>
@@ -35,17 +35,24 @@ export default Navbar
 //Initial Settigs 
   const NavContainer = styled.nav`
   display:flex;
-  font-size: 1.2em;
+  height: 6.0rem;
   justify-content: space-between;
   align-items:center;
   background-color: #000000;
-  height: 60px;
-  .link{
+  box-shadow: 10px 10px 50px black;
+  
+  .container_link{
+    font-size: 3.0rem;
     color: #ffffff;
     text-decoration:none;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.2em;
+    margin-left: 2rem;
+  }
+
+  .link{
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-decoration:none;
+    margin-right:2rem;
   }
 
 //Style Links
@@ -64,10 +71,8 @@ export default Navbar
     margin: 0;
     .link{
       text-decoration: none;
-      font-size: 1.2rem;
       color: #fffefe;
       display: inline;
-      margin-top: 1rem;
     }
    }
 }
@@ -87,7 +92,7 @@ export default Navbar
    
     .link{
     display: block;
-    font-size: 2rem;
+    font-size: 4.0rem;
     margin-top: 1rem;
     
    }
@@ -106,7 +111,7 @@ position: absolute;
 top:-7000px;
 left: -1000px;
 width: 100%;
-height: calc(100vh - 60px);
+height: calc(100vh - 6.0rem);
 background-color: black;
 transition: all .6s ease;
 z-index: 1;
@@ -115,6 +120,6 @@ z-index: 1;
 top: 59px;
 left: 0;
 width: 100%;
-height: calc(100vh - 60px);
+height: calc(100vh - 6.0rem);
 }
 `;

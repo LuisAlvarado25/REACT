@@ -38,7 +38,7 @@ function SocialMedia() {
       
   return (
     <SocialMediaStyle>
-    <div class="fabs" >
+    <div className="fabs" >
     <div className="action" onClick={toggleBtns}>
     <i id="add"><FontAwesomeIcon icon={faPlus} /></i>
     <i id="remove" style={{display:'none'}}><FontAwesomeIcon icon={faTimes}/></i>

@@ -3,17 +3,20 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+html{
+  font-size: 62.5%;
+  font-family: serif;
+  text-align: justify;
+} 
 .About {
-    padding: 20px;
+    padding: 30px;
     width: 100%;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 6.0rem);
     background-color: white;
   }
-  .About h1{
-    text-align: center;
-  }
+  
   .About p {
-    font-size: 20px;
+    font-size: 2.0rem;
     color: rgb(0, 0, 0);
     line-height: 1.5;
     margin-bottom: 10px;

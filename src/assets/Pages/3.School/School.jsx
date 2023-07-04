@@ -1,5 +1,6 @@
 import './School.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt,faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const School = () => {
   const settings = {
@@ -10,7 +11,7 @@ const School = () => {
     slidesToScroll: 1};
   return (
     
-    <div id="School" class="School box">
+    <div id="School" className="School box">
     <div className="School-card">
       <div className="card-front Sucursal1">
         <h1>Valle de señora</h1>
@@ -18,15 +19,27 @@ const School = () => {
       <div className="card-back Ubicacion">
       <h1>Ubicación</h1>
       <h2>Fosforo 617, Valle de Señora, 37205 León, Gto.</h2>
-
-      </div>
+      <div className='Maps'>
+        <a href="https://www.facebook.com/Mambohouse77/?mibextid=ZbWKwL" className="btn" style={{color: '#ff0000'}}>
+        <FontAwesomeIcon icon={faMapMarkerAlt} size="5x"/>  
+         </a>
+         <h3>CLICK</h3>
+        </div>
+     </div>
     </div>
     <div className="School-card ">
       <div className="card-front Sucursal2">
         <h1>Mariano Escobedo</h1>
-      </div>
+        </div>
       <div className="card-back Ubicacion">
         <h1>Ubicación</h1>
+        <h2>Blvr. Mariano Escobedo Pte. 4502 León, Gto.</h2>
+        <div className='Maps'>
+        <a href="https://www.facebook.com/Mambohouse77/?mibextid=ZbWKwL" className="btn" style={{color: '#ff0000'}}>
+        <FontAwesomeIcon icon={faMapMarkerAlt} size="5x"/>  
+         </a>
+         <h3>CLICK</h3>
+        </div>
       </div>
     </div>
   </div>
