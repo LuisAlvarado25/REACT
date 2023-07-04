@@ -51,7 +51,7 @@ function SocialMedia() {
     <a href="https://www.facebook.com/Mambohouse77/?mibextid=ZbWKwL" className="btn" style={{background: '#25D366'}}>
     <i><FontAwesomeIcon icon={faWhatsapp}/></i>    
     </a>
-    <a href="https://www.facebook.com/Mambohouse77/?mibextid=ZbWKwL" className="btn" style={{background: '#e4405f'}}>
+    <a href="https://instagram.com/the.mambohouse?igshid=MzRlODBiNWFlZA==" className="btn" style={{background: '#e4405f'}}>
     <i><FontAwesomeIcon icon={faInstagram}/></i>    
     </a>
       
